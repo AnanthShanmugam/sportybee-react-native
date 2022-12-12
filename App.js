@@ -1,11 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Button, View, Text } from "react-native";
+
 
 export default function App() {
+  const fetchTheList = async () => {
+    alert("Gonna fetch list now");
+  };
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>SportyBee </Text>
       <StatusBar style="auto" />
+      <Button title="Press me" onPress={() => fetchTheList()} />
     </View>
   );
 }
@@ -13,8 +18,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#7F00FF",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
